@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sumarNumeros">
+        <h1>Sumar Numeros</h1>
+        <input type="number" id="numeroA" placeholder="Primer Numero">
+        <input type="number" id="numeroB" placeholder="Segundo Numero">
+        <button onclick="sumar()">SUMAR</button>
+
+        <p class ="resultado" id="resultado"></p>
+    </div>
+    <script>
+        function sumar(){
+            let numero1 = Number(document.getElementById("numeroA").value);
+            let numero2 = Number(document.getElementById("numeroB").value);
+
+           document.getElementById("resultado").textContent = numero1 + numero2;
+
+        }
+    </script>
+</body>
+</html>

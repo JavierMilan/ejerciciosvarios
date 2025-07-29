@@ -12,17 +12,23 @@
         <input type="number" id="numeroA" placeholder="Primer Numero">
         <input type="number" id="numeroB" placeholder="Segundo Numero">
         <button onclick="sumar()">SUMAR</button>
-
         <p class ="resultado" id="resultado"></p>
     </div>
-    <script>
-        function sumar(){
-            let numero1 = Number(document.getElementById("numeroA").value);
-            let numero2 = Number(document.getElementById("numeroB").value);
+    <div class="ParOInpar">
+        <h1>Par o impar</h1>
+        <input type="number" id="numeroCualquiera" placeholder="Escribe un numero">
+        <button onclick="parOInpar()">ENVIAR NUMERO</button>
+        <p class="resultado" id="resultaQue"></p>
+    </div>
+    <div class="MayorOMenor">
+        <h1>Mayor o menor</h1>
+        <input type="number" id="numeroX" placeholder="Primer Numero">
+        <input type="number" id="numeroZ" placeholder="Segundo Numero">
+        <button onclick="mayorOMenor()">¿CUAL ES MAYOR?</button>
+        <p class ="resultado" id="resultaMayor"></p>
+    </div>
 
-           document.getElementById("resultado").textContent = numero1 + numero2;
-
-        }
+    <script src="main.js"> 
     </script>
 </body>
 </html>

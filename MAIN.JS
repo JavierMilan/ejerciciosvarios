@@ -18,6 +18,13 @@ function parOInpar(){
 function mayorOMenor(){
     let numeroX = Number(document.getElementById("numeroX").value);
     let numeroZ = Number(document.getElementById("numeroZ").value);
-
+    
+    if(numeroX > numeroZ){
+        let resultadoMayorMenor = document.getElementById("resultaMayor").textContent = "El primer numero es mayor que el segundo"
+    }else if(numeroX === numeroZ){
+        let resultadoMayorMenor = document.getElementById("resultaMayor").textContent = "ambos son iguales"
+    }else{
+        let resultaMayor = document.getElementById("resultaMayor").textContent = "El segundo numero es mayor que el primero"    
+    }
     
 }

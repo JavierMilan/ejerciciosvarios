@@ -4,7 +4,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem 1rem;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -15,8 +16,6 @@ body{
     align-items: center;
     margin: 2rem 0;
 }
-
-
 input{
     font-size: 3rem;
     margin: 1rem;
